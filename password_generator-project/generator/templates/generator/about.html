@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Scott Katzelnick">
+    <meta name="description" content="The about page for the password generator webapp.">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>About | Password Generator</title>
+</head>
+<body>
+
+    <div class="container" style="margin-left: 250px;">
+        <h1>About <span style="color: orange;">Password Generator</span></h1>
+        <h3>Author: Scott Katzelnick</h3>
+        <h3>Developed using the Django Framework&reg;</h3>
+
+        <img src="/static/img/django.png" alt="The standard Django logo" style="width: 8%; height: auto;">&trade;
+
+        <br>
+
+        <p>This app serves as an introductory assignment to learning how to develop a website/webapp using the
+           Django Framework&reg;-<br> a comprehensive, fully accessible Python framework that makes it easy for anyone
+           to get started creating their own web projects.</p>
+
+        <p>Specifically, this app uses a little bit of HTML, CSS, JavaScript and Python logic to allow a user to choose
+           from a couple options<br> such as the length of the password desired, if it should include uppercase letters, special
+           characters, etc. The app is simple and easy<br>  to navigate thanks to a few clearly labled buttons that take you
+           to the desired pages.</p>
+
+        <p>Feel free to use this app freely and openly to generate secure, un-guessable passwords for your password
+           protected accounts.<br> Just make sure to store them in a safe place so as not to lose them forever, if
+           you're forgetful.</p>
+
+        <a href="{% url 'home' %}" class="btn btn-secondary">Home</a>
+
+        <br><br>
+
+        <footer id="footer">
+            <div class="container text-left text-muted" style="padding: 0;">
+                <pstyle="display: block; margin: 0;">Copyright &copy; 2020 - Scott Katzelnick | All Rights Reserved</p>
+                <p><a href="http://katzelnick.com">www.katzelnick.com</a></p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
